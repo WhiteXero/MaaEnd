@@ -54,6 +54,4 @@ Powered by [MaaFramework](https://github.com/MaaXYZ/MaaFramework) & [MXU](https:
 ## 赞助
 
 <!-- markdownlint-disable MD045 -->
-<a href="https://afdian.com/a/misteo">
-  <img width="200" src="https://pic1.afdiancdn.com/static/img/welcome/button-sponsorme.png">
-</a>
+[<img width="200" src="https://pic1.afdiancdn.com/static/img/welcome/button-sponsorme.png">](https://afdian.com/a/misteo)
