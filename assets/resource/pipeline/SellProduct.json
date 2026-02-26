@@ -1,7 +1,7 @@
 {
     "SellProductBegin": {
         "pre_delay": 0,
-        "post_delay": 500,
+        "post_delay": 0,
         "doc": "虚节点.",
         "next": [
             "SellProductAtDevelopment",
@@ -10,16 +10,8 @@
     },
     "SellProductMain": {
         "pre_delay": 0,
-        "post_delay": 200,
+        "post_delay": 0,
         "doc": "脚本入口",
-        "action": {
-            "type": "ClickKey",
-            "param": {
-                "key": [
-                    89
-                ]
-            }
-        },
         "next": [
             "SellProductBegin"
         ]
@@ -34,6 +26,8 @@
                 ]
             }
         },
+        "post_delay": 0,
+        "pre_delay": 0,
         "post_wait_freezes": 80,
         "next": [
             "SellProductEnterManagementLocked",
@@ -65,7 +59,7 @@
     },
     "SellProductEnterOutpostManagement": {
         "pre_delay": 0,
-        "post_delay": 500,
+        "post_delay": 0,
         "doc": "位于地区建设，进入据点管理",
         "recognition": {
             "type": "OCR",
@@ -91,6 +85,7 @@
             "type": "Click",
             "param": {}
         },
+        "post_wait_freezes": 10,
         "next": [
             "SellProductAtSell",
             "SellProductEnterOutpostManagement"
@@ -131,7 +126,9 @@
             }
         },
         "next": [
-            "SellProductSell"
+            "SellProductSell",
+            "SellProductZeroProductRetry",
+            "SellProductZeroMoney"
         ]
     },
     "SellProductAtSell": {
@@ -482,7 +479,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 10,
+        "post_wait_freezes": 100,
         "next": [
             "SellProductZeroMoney",
             "SellProductCanSell",
@@ -508,10 +505,10 @@
             "type": "OCR",
             "param": {
                 "roi": [
-                    1108,
-                    317,
-                    81,
-                    36
+                    1083,
+                    327,
+                    109,
+                    24
                 ],
                 "expected": [
                     "^[0-9]{1,3}$"
@@ -631,10 +628,10 @@
             "type": "OCR",
             "param": {
                 "roi": [
-                    1108,
-                    317,
-                    81,
-                    36
+                    1083,
+                    327,
+                    109,
+                    24
                 ],
                 "expected": [
                     "^[0-9]{1,3}$"
@@ -666,9 +663,9 @@
                 ],
                 "roi": [
                     900,
-                    550,
+                    639,
                     350,
-                    150
+                    49
                 ]
             }
         },
@@ -840,7 +837,9 @@
             }
         },
         "next": [
-            "SellProductSell"
+            "SellProductSell",
+            "SellProductZeroProductRetry",
+            "SellProductZeroMoney"
         ]
     },
     "SellProductSellPressed": {
