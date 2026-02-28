@@ -51,9 +51,9 @@ The following example shows how to use universal jump in a task that "enters the
     "DailyProtocolPassInMenu": {
         "desc": "In Protocol Pass menu",
         "recognition": { ... },
-        "next": [ 
+        "next": [
             "DailyProtocolMissionsEnter",
-             ... 
+             ...
         ]
     },
     ...
@@ -99,7 +99,7 @@ When `ResellStageCheckArea` fails to recognize (for example the current screen i
 **Only use the scene interface nodes defined in `assets/resource/pipeline/SceneInterface.json`.**  
 These node names **do not start with `__ScenePrivate`**.
 
-### Do Not Use __ScenePrivate Nodes
+### Do Not Use \_\_ScenePrivate Nodes
 
 `SceneManager` files (such as `SceneCommon.json`, `SceneMenu.json`, `SceneWorld.json`, `SceneMap.json`, etc.) define `__ScenePrivate*` nodes as **internal implementation details** that support the actual jump logic of the interfaces.
 
@@ -109,23 +109,23 @@ These node names **do not start with `__ScenePrivate`**.
 
 ### Common Interface Overview
 
-| Category | Interface Name                      | Description                                                                    |
-| -------- | ----------------------------------- | ------------------------------------------------------------------------------ |
-| World    | `SceneAnyEnterWorld`               | Enter any overworld (Valley / Wuling / Dijiang) from any screen.              |
-| World    | `SceneEnterWorldDijiang`           | Enter Dijiang overworld.                                                       |
-| World    | `SceneEnterWorldValleyIVTheHub`    | Enter Valley IV - The Hub overworld.                                           |
-| World    | `SceneEnterWorldFactory`           | Enter overworld factory mode.                                                  |
-| Map      | `SceneEnterMapDijiang`             | Enter Dijiang map screen.                                                      |
-| Map      | `SceneEnterMapValleyIVTheHub`      | Enter Valley IV - The Hub map screen.                                          |
-| Menu     | `SceneEnterMenuList`               | Enter main menu list.                                                          |
-| Menu     | `SceneEnterMenuRegionalDevelopment`| Enter Regional Development menu.                                               |
-| Menu     | `SceneEnterMenuEvent`              | Enter Event menu.                                                              |
-| Menu     | `SceneEnterMenuProtocolPass`       | Enter Protocol Pass menu.                                                      |
-| Menu     | `SceneEnterMenuBackpack`           | Enter inventory screen.                                                        |
-| Menu     | `SceneEnterMenuShop`               | Enter shop screen.                                                             |
-| Helper   | `SceneDialogConfirm`               | Click confirm button in dialogs.                                               |
-| Helper   | `SceneDialogCancel`                | Click cancel button in dialogs.                                                |
-| Helper   | `SceneNoticeRewardsConfirm`        | Click confirm button on rewards screens.                                       |
-| Helper   | `SceneWaitLoadingExit`             | Wait for loading screen to disappear.                                          |
+| Category | Interface Name                      | Description                                                      |
+| -------- | ----------------------------------- | ---------------------------------------------------------------- |
+| World    | `SceneAnyEnterWorld`                | Enter any overworld (Valley / Wuling / Dijiang) from any screen. |
+| World    | `SceneEnterWorldDijiang`            | Enter Dijiang overworld.                                         |
+| World    | `SceneEnterWorldValleyIVTheHub`     | Enter Valley IV - The Hub overworld.                             |
+| World    | `SceneEnterWorldFactory`            | Enter overworld factory mode.                                    |
+| Map      | `SceneEnterMapDijiang`              | Enter Dijiang map screen.                                        |
+| Map      | `SceneEnterMapValleyIVTheHub`       | Enter Valley IV - The Hub map screen.                            |
+| Menu     | `SceneEnterMenuList`                | Enter main menu list.                                            |
+| Menu     | `SceneEnterMenuRegionalDevelopment` | Enter Regional Development menu.                                 |
+| Menu     | `SceneEnterMenuEvent`               | Enter Event menu.                                                |
+| Menu     | `SceneEnterMenuProtocolPass`        | Enter Protocol Pass menu.                                        |
+| Menu     | `SceneEnterMenuBackpack`            | Enter inventory screen.                                          |
+| Menu     | `SceneEnterMenuShop`                | Enter shop screen.                                               |
+| Helper   | `SceneDialogConfirm`                | Click confirm button in dialogs.                                 |
+| Helper   | `SceneDialogCancel`                 | Click cancel button in dialogs.                                  |
+| Helper   | `SceneNoticeRewardsConfirm`         | Click confirm button on rewards screens.                         |
+| Helper   | `SceneWaitLoadingExit`              | Wait for loading screen to disappear.                            |
 
 For the complete list of interfaces and detailed descriptions, please refer to the `desc` field of each node in `assets/resource/pipeline/SceneInterface.json`.

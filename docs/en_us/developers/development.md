@@ -112,4 +112,4 @@ Some highly reusable nodes have been encapsulated with detailed documentation to
 
 ## Communication
 
-Developer QQ Group:  [1072587329](https://qm.qq.com/q/EyirQpBiW4) (Working group-welcome to join development, but user issues are not handled here)
+Developer QQ Group: [1072587329](https://qm.qq.com/q/EyirQpBiW4) (Working group-welcome to join development, but user issues are not handled here)

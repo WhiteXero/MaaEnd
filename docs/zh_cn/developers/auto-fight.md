@@ -42,11 +42,8 @@
 ```jsonc
 {
     "RealtimeTaskEntry": {
-        "next": [
-            "[JumpBack]AutoFightRealtimeTask",
-            "SomeOtherRealtimeLogic"
-        ]
-    }
+        "next": ["[JumpBack]AutoFightRealtimeTask", "SomeOtherRealtimeLogic"],
+    },
 }
 ```
 
@@ -56,7 +53,7 @@
 
 **请仅使用 `AutoFightInterface.json` 内定义的接口节点**：`AutoFight`、`AutoFightNoAttack`、`AutoFightRealtimeTask` 等。
 
-### 禁止直接引用 __AutoFight* 内部节点
+### 禁止直接引用 \_\_AutoFight\* 内部节点
 
 `AutoFight` 目录下的 `MainLoop.json`、`Action.json`、`Recognition.json` 中定义的 `__AutoFight*` 节点（如 `__AutoFightLoop`、`__AutoFightExecute`、`__AutoFightActionAttack` 等）属于 **内部实现**，用于支撑接口的识别与动作流程。
 

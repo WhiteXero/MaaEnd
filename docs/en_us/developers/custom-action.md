@@ -39,4 +39,3 @@ It takes a screenshot of the current screen and saves it as a PNG file under the
 > Regardless of whether these fields are configured in the Pipeline, it will always capture the **entire screen**.
 
 <!-- markdownlint-enable MD060 -->
-
