@@ -45,7 +45,7 @@
             }
         },
         "next": [
-            "__ScenePrivateWorldEnterMenuControlNexusSuccess",
+            "InDijiangControlNexus",
             "[JumpBack]CloseButtonType1"
         ]
     },
@@ -128,7 +128,7 @@
                             }
                         }
                     },
-                    "__ScenePrivateWorldEnterMenuControlNexusSuccess"
+                    "InDijiangControlNexus"
                 ]
             }
         },
@@ -181,7 +181,7 @@
                             }
                         }
                     },
-                    "__ScenePrivateWorldEnterMenuControlNexusSuccess"
+                    "InDijiangControlNexus"
                 ]
             }
         },
